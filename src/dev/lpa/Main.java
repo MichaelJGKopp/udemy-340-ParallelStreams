@@ -7,12 +7,12 @@ public class Main {
 
   public static void main(String[] args) {
 
-    int numbersLength = 100_000;
+    int numbersLength = 100_000_000;
     long[] numbers = new Random().longs(numbersLength,
       0, numbersLength).toArray();
 
     long delta = 0;
-    int iterations = 100;
+    int iterations = 25;
 
     for (int i = 0; i < iterations; i++) {
       long start = System.nanoTime();
